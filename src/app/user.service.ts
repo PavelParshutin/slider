@@ -21,7 +21,7 @@ export class UserService {
       profilePhoto: 'assets/img/photo-girl.svg',
       profileName: 'Carlene Grace',
       profilePosition: 'Carlene Grace',
-      profileText: 'I\'ve found Diib to be very helpful on demystifying Google Analytics data which can be overwhelming. The service trawls through your data and finds the areas where you can improve - even if you were an expert this would save time. I\'ve found Diib to be very helpful on demystifying Google Analytics data which can be overwhelming. The service trawls through your data and finds the areas where you can improve - even if you were an expert this would save time. End Text'
+      profileText: 'I\'ve found Diib to be very helpful on demystifying Google Analytics data '
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ export class UserService {
       profilePhoto: 'assets/img/photo-girl.svg',
       profileName: 'Carlene Grace',
       profilePosition: 'Carlene Grace',
-      profileText: 'I\'ve found Diib to be very helpful on demystifying Google Analytics data which can be overwhelming. The service trawls through your data and finds the areas where you can improve - even if you were an expert this would save time. I\'ve found Diib to be very helpful on demystifying Google Analytics data which can be overwhelming. The service trawls through your data and finds the areas where you can improve - even if you were an expert this would save time. End Text'
+      profileText: 'I\'ve found Diib to be very helpful on demystifying Google Analytics data which can be overwhelming. The service trawls through your data and finds the areas where you can improve - even if you were an expert this would '
     },
     {
       id: 6,

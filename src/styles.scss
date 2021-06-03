@@ -1,6 +1,11 @@
 @import '~swiper/swiper-bundle';
+@import "src/assets/scss/fonts";
 * {
   box-sizing: border-box;
+}
+body {
+  font-family: Manrope;
+  margin: 0px;
 }
 
 .profile-photo {

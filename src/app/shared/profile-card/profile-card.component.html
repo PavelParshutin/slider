@@ -7,5 +7,5 @@
     </div>
   </div>
   <div class="profile-text" [class.profile-text-large]="textLarge">{{user.profileText}}</div>
-  <span class="read-more-btn" (click)="onClick()">{{textLarge ? 'less' : 'read more'}}</span>
+  <span *ngIf="user.profileText.length > textLength" class="read-more-btn" (click)="textLarge = !textLarge">{{textLarge ? 'less' : 'read more'}}</span>
 </div>

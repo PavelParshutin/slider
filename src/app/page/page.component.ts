@@ -37,7 +37,7 @@ export class PageComponent implements OnInit {
           type: 'bullets',
           clickable: true,
       };
-    } else {
+    }else {
       this.slidesCount = 3;
       this.spaceBetween = 15;
       this.paginationOption =  {
@@ -45,6 +45,9 @@ export class PageComponent implements OnInit {
         clickable: true,
       };
     }
+    if (this.screenWidth <= 940) {
+      this.slidesCount = 1;
+    };
     if (this.screenWidth <= 320) {
       this.slidesCount = 1;
       this.spaceBetween = 5;
