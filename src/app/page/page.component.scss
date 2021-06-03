@@ -1,23 +1,18 @@
+@import "src/assets/scss/variables";
 
 :root {
   --swiper-theme-color: #00AC45;
   --swiper-navigation-color: transparent;
 }
+
 @media(max-width:1920px){
   .slider-container {
-    //width: 1550px;
     width: 100vw;
-    //border: 1px solid black;
     display: flex;
     padding-right: 30px;
     padding-left: 30px;
-    background-color: #F4F5F7;
+    background-color: $color3;
   }
-
-  //.side-block{
-  //  //min-width: 200px;
-  //  border-right: 1px solid black;
-  //}
 
   .title {
     font-weight: 600;
@@ -33,11 +28,10 @@
   }
 
   .swiper-container {
-    width: 100%;
-    //height: auto;
-    height: 300px;
+    width: auto;
+    height: 320px;
     padding: 10px 30px;
-    //overflow-y: hidden;
+    position: relative;
   }
 
   .swiper-button-prev, .swiper-button-next {
@@ -63,20 +57,24 @@
   }
 
   .swiper-pagination-bullet {
-    background-color: #8C8C8C;
+    background-color: $color4;
   }
   .swiper-pagination-bullet-active {
-    background-color: #00AC45;
+    background-color: $color2;
   }
   .swiper-pagination {
-    bottom: 30px !important;
+    bottom: 20px !important;
   }
-
 }
 
 @media(max-width:1280px) {
   .swiper-container {
     max-width: 1108px;
+    height: 100%;
+    min-height: auto;
+  }
+  .card-block {
+    min-height: auto;
   }
   .title {
     font-size: 24px;
@@ -85,10 +83,17 @@
 
 @media(max-width:320px) {
 
-  //.swiper-pagination .swiper-pagination-progressbar {
-  //  top: 100%;
-  //}
-  .swiper-container-horizontal > .swiper-pagination-progressbar, .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
-  top: 85%;
+  .swiper-container-horizontal > .swiper-pagination-progressbar {
+  top: 98.5%;
+  }
+
+  .swiper-container {
+    min-width: auto;
+    height: auto;
+  }
+
+  .card-block {
+    width: 90vw;
+    min-height: auto;
   }
 }
