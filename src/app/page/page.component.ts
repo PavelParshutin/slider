@@ -1,8 +1,7 @@
-import { ChangeDetectorRef, Component, HostListener, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, HostListener, OnInit, ViewEncapsulation } from '@angular/core';
 import SwiperCore, { Pagination, Navigation } from 'swiper/core';
-import Swiper from 'swiper/core';
-import { User } from '../user.interface';
-import { UserService } from '../user.service';
+import { User } from 'src/app/user.interface';
+import { UserService } from 'src/app/user.service';
 
 SwiperCore.use([Pagination, Navigation]);
 @Component({
@@ -18,7 +17,7 @@ export class PageComponent implements OnInit {
   }
 
   users: User[];
-  paginationOption = {}
+  paginationOption;
   spaceBetween = 15;
   slidesCount = 3;
   screenHeight: number;
