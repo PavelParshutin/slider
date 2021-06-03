@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {User} from '../../user.interface';
 
 @Component({
   selector: 'app-profile-card',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileCardComponent implements OnInit {
 
+  @Input() user: User;
+  textLarge = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClick() {
+    this.textLarge = !this.textLarge
   }
 
 }

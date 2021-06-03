@@ -1,11 +1,11 @@
-<div class="container">
+<div class="container" [class.container-large]="textLarge">
   <div class="profile-info">
-    <img src="assets/img/photo-boy.svg" class="profile-photo" alt="profile photo">
+    <img [src]="user.profilePhoto" class="profile-photo" alt="profile photo">
     <div>
-      <div class="profile-info-title">Nick Colebatch</div>
-      <div class="profile-info-text">RV Cover Supply</div>
+      <div class="profile-info-title">{{user.profileName}}</div>
+      <div class="profile-info-text">{{user.profilePosition}}</div>
     </div>
   </div>
-  <div class="profile-text">I've found Diib to be very helpful on demystifying Google Analytics data which can be overwhelming. The service trawls through your data and finds the areas where you can improve - even if you were an expert this would save time. For me...</div>
-  <span class="read-more-btn">read more</span>
+  <div class="profile-text" [class.profile-text-large]="textLarge">{{user.profileText}}</div>
+  <span class="read-more-btn" (click)="onClick()">{{textLarge ? 'less' : 'read more'}}</span>
 </div>
