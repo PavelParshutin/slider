@@ -19,5 +19,4 @@ export class ProfileCardComponent implements OnInit {
   onClick(): void {
     this.textLarge = !this.textLarge;
   }
-
 }
