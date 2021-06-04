@@ -12,8 +12,8 @@ SwiperCore.use([Pagination, Navigation]);
 })
 export class PageComponent implements OnInit {
 
-  constructor(private usersServise: UserService) {
-    this.users = usersServise.getUsers();
+  constructor(private usersService: UserService) {
+    this.users = usersService.getUsers();
   }
 
   users: User[];
@@ -47,14 +47,14 @@ export class PageComponent implements OnInit {
     }
     if (this.screenWidth <= 940) {
       this.slidesCount = 1;
-    };
+    }
     if (this.screenWidth <= 320) {
-      this.slidesCount = 1;
+      this.slidesCount = 1.1;
       this.spaceBetween = 5;
       this.paginationOption = {
         type: 'progressbar',
       };
     }
-    }
+  }
 
 }
