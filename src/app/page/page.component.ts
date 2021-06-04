@@ -12,16 +12,16 @@ SwiperCore.use([Pagination, Navigation]);
 })
 export class PageComponent implements OnInit {
 
-  constructor(private usersService: UserService) {
-    this.users = usersService.getUsers();
-  }
-
   users: User[];
   paginationOption;
   spaceBetween = 15;
   slidesCount = 3;
   screenHeight: number;
   screenWidth: number;
+
+  constructor(private usersService: UserService) {
+    this.users = usersService.getUsers();
+  }
 
   ngOnInit(): void {
     this.getScreenSize();
