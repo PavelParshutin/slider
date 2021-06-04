@@ -7,9 +7,14 @@
       [spaceBetween]="spaceBetween"
       [navigation]="true"
       [pagination]="paginationOption">
-      <ng-container >
-        <ng-template swiperSlide *ngFor="let user of users"><app-profile-card [user]="user"></app-profile-card></ng-template>
-      </ng-container>
+      <div class="swiper-wrapper">
+        <ng-container >
+          <ng-template swiperSlide *ngFor="let user of users"><app-profile-card [user]="user"></app-profile-card></ng-template>
+        </ng-container>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </swiper>
   </div>
 </div>
