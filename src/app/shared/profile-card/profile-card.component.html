@@ -2,10 +2,10 @@
   <div class="profile-info">
     <img [src]="user.profilePhoto" class="profile-photo" alt="profile photo">
     <div>
-      <div class="profile-info-title">{{user.profileName}}</div>
-      <div class="profile-info-text">{{user.profilePosition}}</div>
+      <div class="profile-info-title">{{ user.profileName }}</div>
+      <div class="profile-info-text">{{ user.profilePosition }}</div>
     </div>
   </div>
-  <div class="profile-text" [class.profile-text-large]="textLarge">{{user.profileText}}</div>
-  <span *ngIf="user.profileText.length > textLength" class="read-more-btn" (click)="textLarge = !textLarge">{{textLarge ? 'less' : 'read more'}}</span>
+  <div class="profile-text" [class.profile-text-large]="textLarge">{{ user.profileText }}</div>
+  <span *ngIf="user.profileText.length > textLength" class="read-more-btn" (click)="textLarge = !textLarge">{{ textLarge ? 'less' : 'read more' }}</span>
 </div>

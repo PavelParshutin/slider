@@ -30,14 +30,14 @@ export class PageComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   getScreenSize(event?): void {
     this.screenWidth = window.outerWidth;
-    if(this.screenWidth <= 1280) {
+    if (this.screenWidth <= 1280) {
       this.slidesCount = 2;
       this.spaceBetween = 15;
       this.paginationOption =  {
           type: 'bullets',
           clickable: true,
       };
-    }else {
+    } else {
       this.slidesCount = 3;
       this.spaceBetween = 15;
       this.paginationOption =  {
